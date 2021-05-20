@@ -31,7 +31,7 @@
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr auto 30px 30px 2fr;
+    grid-template-rows: 1fr auto auto auto 2fr;
     justify-content: center;
     justify-items: center;
     grid-template-areas: "white-top"
@@ -49,4 +49,9 @@
     justify-content: center;
     align-items: center;
     grid-area: logo;
+}
+
+#search-bar {
+    padding: 5 0 5 0;
+    display: flex;
 }
