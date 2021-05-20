@@ -20,10 +20,33 @@
     padding: 10 10 10 10;
     font-weight: 150;
     color: #747474;
-    
-
 }
 
 .f-div2:hover {
     text-decoration: underline;
+}
+
+
+#body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto 30px 30px 2fr;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas: "white-top"
+                         "logo"
+                         "search-bar"
+                         "buttons"
+                         "white-bot"
+}
+
+
+#logo {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
 }
