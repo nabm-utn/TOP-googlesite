@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 
 <head>
     <title>My GOOGLE site</title>
@@ -8,15 +11,47 @@
 
 <body>
     <header class="navbar">
-        <div>
-            <div style="margin-left:auto;margin-right:auto;">
-            navlink1
+        <div class="navbar-link">Gmail</div>
+        <div class="navbar-link">Images</div>
+        <div href="#" class="navbar-icon" id="menu"><span class="material-icons">apps</span></div>
+        <div href="#" class="navbar-icon" id="account"><span class="material-icons">account_circle</span></div>
+    </header>
+
+    <form id="main-form">
+        <picture>
+            <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </picture>
+        <div id="search-bar">
+            <div id="search-bar-left-div">
+                <span class="material-icons">search</span>
             </div>
-            <div style="margin-left:auto;margin-right:auto;">
-                navlink1
+            <div id="search-bar-mid-div">
+                <input id="search-input">
+            </div>
+            <div id="search-bar-rigth-div">
+                <span class="material-icons" id="aux-span">search</span>
             </div>
         </div>
-    </header>
+        <div id="search-buttons-div">
+            <button class="search-button">Google Search</button>
+            <button class="search-button">I'm feeling Lucky</button>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <div class="footer-div" id="footer-div-left">
+            <div class="footer-link" href="#">About Google</div>
+            <div class="footer-link" href="#">Publicity</div>
+            <div class="footer-link" href="#">Business</div>
+            <div class="footer-link" href="#">How Search works</div>
+        </div>
+        <div class="footer-div" id="footer-div-right">
+            <div class="footer-link" href="#">Privacy</div>
+            <div class="footer-link" href="#">Terms</div>
+            <div class="footer-link" href="#">Preferences</div>        
+        </div>
+    </footer>
+
 </body>
 
 </html>

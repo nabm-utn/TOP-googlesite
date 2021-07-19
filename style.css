@@ -1,75 +1,185 @@
-.footer {
-    background-color: #e6e6e6;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     width: 100%;
-    height: 5%;
-    min-height: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    justify-items: stretch;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 100%;
+    background-color: #fff;
+}
+
+.navbar-link {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 1% 2% 1% 2%;
+}
+
+
+
+.navbar-icon {
+    size: 50% 50%;
+    padding: 2% 1% 2% 1%;
+    border-radius: 50%;
+}
+
+@keyframes navbar-background {
+    from {background-color: #fff;}
+    to {background-color: #808080;}
+}
+.navbar-icon:hover{
+    animation-duration:  2000ms;
+    animation-name: gray-circle;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+.navbar-link:hover{
+    text-decoration: underline;
+}
+
+.footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    background-color: #e6e6e6;
 }
 
-.f-div1 {
+.footer-div{
     display: flex;
     flex-direction: row;
-}
-
-.f-div2 {
-    padding: 10 10 10 10;
-    font-weight: 150;
-    color: #747474;
-}
-
-.f-div2:hover {
-    text-decoration: underline;
-}
-
-.button {
-    
-    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
     background-color: #e6e6e6;
-    color: #747474;
-    border-color: #ffffff;
-    
+    min-width: 40%;
 }
 
-.button:hover {
-    color: #000000;
-    border-color: #000000;
+#footer-div-right{
+    justify-content: flex-end;
 }
 
-
-#body {
-    height: 95%;
-    width: 98%;
-    display: grid;
-    grid-template-rows: 1fr auto auto auto 2fr;
-    justify-content: center;
-    justify-items: center;
-    grid-template-areas: "white-top"
-                         "logo"
-                         "search-bar"
-                         "buttons"
-                         "white-bot"
+.footer-link {
+    background-color: #e6e6e6;
+    border-radius: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    color: #808080;
 }
 
+.footer-link:hover{
+    text-decoration: underline;
+    text-decoration-thickness: bolder;
+}
 
-#logo {
-    width: 300px;
+#main-form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-area: logo;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+    min-width: 40vw;
+    min-height: 60vh;
+    background-color: #ffffff;
 }
 
 #search-bar {
-    padding: 5 0 5 0;
     display: flex;
-    flex-direction: column;
-    min-width: 300px;
-    width: 30%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:stretch;
+    align-items: center;
+    min-height: 44px;
+    min-height: 10vh;
+    max-width: 600px;
+    min-width: 60%;
+    border-color: grey;
+    border-style: none;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+#search-bar-left-div {
+border-width: 3px;
+border-top-left-radius: 50%;
+border-bottom-left-radius: 50%;
+border-style: inset;
+border-right-style: none;
+border-color: rgba(165, 168, 170, 0.61)
+}
+
+#search-bar-rigth-div {
+    border-width: 3px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-style: inset;
+    border-left-style: none;
+    border-color: rgba(165, 168, 170, 0.61);
+    min-width: 10px;
+    min-height: 100%;
+}
+
+#aux-span {
+    color: white;
+}
+
+#search-bar-mid-div {
+    border-width: 3px;
+    border-style: inset;
+    border-right-style: none;
+    border-left-style: none;
+    border-color: rgba(165, 168, 170, 0.61);
+    padding-top:5px;
+    padding-bottom: 5px;
+    
+}
+
+#search-input {
+    max-width: 90%;
+    min-width: 70%;
+    border-style: none;
+    min-height: 80%;
+    max-height: 90%;
+}
+
+#search-input:focus {
+    border-style: none;
+}
+
+.search-button {
+    background-color: rgb(248, 249, 250);
+    border-color: rgb(248, 249, 250);
+    color:rgb(60, 64, 67)
+}
+
+.search-button-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
 }
